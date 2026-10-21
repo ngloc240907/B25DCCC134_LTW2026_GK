@@ -1,0 +1,13 @@
+import { NavLink } from 'react-router-dom';
+
+const NavBar = () => {
+  return (
+    <nav>
+      <NavLink to="/" end className={({ isActive }) => isActive ? "active" : ""}>Trang chủ</NavLink>
+      <NavLink to="/books" end className={({ isActive }) => isActive ? "active" : ""}>Danh sách</NavLink>
+      <NavLink to="/books/new" end className={({ isActive }) => isActive ? "active" : ""}>Thêm mới</NavLink>
+    </nav>
+  );
+};
+
+export default NavBar;
